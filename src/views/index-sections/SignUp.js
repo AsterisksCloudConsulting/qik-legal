@@ -23,11 +23,20 @@ function SignUp() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
+  React.useEffect(() => {
+    document.body.classList.add("signup-page");
+    document.body.classList.add("sidebar-collapse");
+    document.documentElement.classList.remove("nav-open");
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+    return function cleanup() {
+      document.body.classList.remove("signup-page");
+      document.body.classList.remove("sidebar-collapse");
+    };
+  }, []);
   return (
     <>
-      <div
-      id="signup"
-        className="section section-signup"
+      <div className="section section-signup"
         style={{
           backgroundImage:
             "url(" + require("assets/img/bg11.jpg").default + ")",
@@ -129,8 +138,8 @@ function SignUp() {
                   <Button
                     className="btn-neutral btn-round"
                     color="info"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    //to="/landing-page"
+                    onClick={event =>  window.location.href='/landing-page'}
                     size="lg"
                   >
                     Get Started
