@@ -15,15 +15,15 @@ function DefaultFooter() {
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=nukr-default-footer"
+                 // href="https://www.creative-tim.com?ref=nukr-default-footer"
                   target="_blank"
                 >
-                  Creative Tim
+                  QikLegal
                 </a>
               </li>
               <li>
                 <a
-                  href="http://presentation.creative-tim.com?ref=nukr-default-footer"
+                  //href="http://presentation.creative-tim.com?ref=nukr-default-footer"
                   target="_blank"
                 >
                   About Us
@@ -31,7 +31,7 @@ function DefaultFooter() {
               </li>
               <li>
                 <a
-                  href="http://blog.creative-tim.com?ref=nukr-default-footer"
+                 // href="http://blog.creative-tim.com?ref=nukr-default-footer"
                   target="_blank"
                 >
                   Blog
@@ -40,21 +40,7 @@ function DefaultFooter() {
             </ul>
           </nav>
           <div className="copyright" id="copyright">
-            © {new Date().getFullYear()}, Designed by{" "}
-            <a
-              href="https://www.invisionapp.com?ref=nukr-default-footer"
-              target="_blank"
-            >
-              Invision
-            </a>
-            . Coded by{" "}
-            <a
-              href="https://www.creative-tim.com?ref=nukr-default-footer"
-              target="_blank"
-            >
-              Creative Tim
-            </a>
-            .
+            © {new Date().getFullYear()}, Designed by Asterisks Cloud Consulting.
           </div>
         </Container>
       </footer>
